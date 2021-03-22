@@ -1,9 +1,12 @@
 #include <iostream>
-#include "LCPrimaryArray8.h"
+#include "LCPrimaryArray9.h"
 
 int main() {
-    LCPrimaryArray8 mySolution;
-    std::vector<int> nums = {2,0,1};
-    mySolution.moveZeroes(nums);
+    LCPrimaryArray9 mySolution;
+    std::vector<int> nums = {3,2,4};
+    std::vector<int> result;
+    result = mySolution.twoSum(nums,6);
+    for (auto x:result)
+        std::cout << x << "  ";
     return 0;
 }
