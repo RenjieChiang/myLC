@@ -1,8 +1,8 @@
 #include <iostream>
-#include "LCPrimaryString3.h"
+#include "LCPrimaryString5.h"
 
 int main() {
-    LCPrimaryString3 mySolution;
-    std::cout << mySolution.firstUniqChar("loveleetcode");
+    LCPrimaryString5 mySolution;
+    std::cout << mySolution.isPalindrome("race a car");
     return 0;
 }
