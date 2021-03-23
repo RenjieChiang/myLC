@@ -1,9 +1,8 @@
 #include <iostream>
-#include "LCPrimaryString1.h"
+#include "LCPrimaryString3.h"
 
 int main() {
-    LCPrimaryString1 mySolution;
-    std::vector<char> str = {'h','e','l','l','o'};
-    mySolution.reverseString(str);
+    LCPrimaryString3 mySolution;
+    std::cout << mySolution.firstUniqChar("loveleetcode");
     return 0;
 }
