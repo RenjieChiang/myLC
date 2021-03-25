@@ -1,9 +1,8 @@
 #include <iostream>
-#include "LCPrimaryString6.h"
+#include "LCPrimaryString7.h"
 
 int main() {
-    LCPrimaryString6 mySolution;
-    std::cout << mySolution.myAtoi("91283472332");
-
+    LCPrimaryString7 mySolution;
+    std::cout << mySolution.strStr("mississippi", "pi");
     return 0;
 }
