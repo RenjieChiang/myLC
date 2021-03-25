@@ -1,8 +1,9 @@
 #include <iostream>
-#include "LCPrimaryString5.h"
+#include "LCPrimaryString6.h"
 
 int main() {
-    LCPrimaryString5 mySolution;
-    std::cout << mySolution.isPalindrome("race a car");
+    LCPrimaryString6 mySolution;
+    std::cout << mySolution.myAtoi("91283472332");
+
     return 0;
 }
