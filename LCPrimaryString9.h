@@ -4,9 +4,11 @@
 
 #ifndef MYLEETCODE_LCPRIMARYSTRING9_H
 #define MYLEETCODE_LCPRIMARYSTRING9_H
-
-
+#include "string"
+#include "vector"
 class LCPrimaryString9 {
+public:
+    std::string longestCommonPrefix(std::vector<std::string> & strs);
 
 };
 

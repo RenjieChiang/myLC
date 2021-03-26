@@ -1,8 +1,9 @@
 #include <iostream>
-#include "LCPrimaryString8.h"
+#include "LCPrimaryString9.h"
 
 int main() {
-    LCPrimaryString8 mySolution;
-    std::cout << mySolution.countAndSay(5);
+    LCPrimaryString9 mySolution;
+    std::vector<std::string> myStrs = {"ab", "a"};
+    std::cout << mySolution.longestCommonPrefix(myStrs);
     return 0;
 }
