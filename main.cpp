@@ -1,8 +1,8 @@
 #include <iostream>
-#include "LCPrimaryString7.h"
+#include "LCPrimaryString8.h"
 
 int main() {
-    LCPrimaryString7 mySolution;
-    std::cout << mySolution.strStr("mississippi", "pi");
+    LCPrimaryString8 mySolution;
+    std::cout << mySolution.countAndSay(5);
     return 0;
 }
