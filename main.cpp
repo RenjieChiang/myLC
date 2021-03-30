@@ -1,30 +1,22 @@
 #include <iostream>
 #include "LCPrimaryChain2.h"
-
+#include "unistd.h"
+#include <cstdio>
 using namespace myListNode;
 
-ListNode * FrontInsert(int x, ListNode * head )
-{
-    auto temp = new ListNode(x);
-    temp->next = head;
-    head = temp;
-    return head;
-}
+//ListNode * FrontInsert(int x, ListNode * head )
+//{
+//    auto temp = new ListNode(x);
+//    temp->next = head;
+//    head = temp;
+//    return head;
+//}
 
-int main() {
+int main(int argc, char **argv, char **envp) {
     LCPrimaryChain2 mySolution;
-    int a[5] = {1,2,3,4,5};
-    auto head = new ListNode(a[4]);
-    for (int i = 3; i > -1 ; i--)
+    for (int i = 0; argv[i] != nullptr; ++i)
     {
-        head = FrontInsert(a[i],head);
-    }
-    mySolution.removeNthFromEnd(head,2);
-    ListNode * temp = head;
-    while (temp!= nullptr)
-    {
-        std::cout << temp->val << "  ";
-        temp = temp->next;
+        std::cout << "argv[" << i <<"]: " << argv[i] << std::endl;
     }
     return 0;
 }
