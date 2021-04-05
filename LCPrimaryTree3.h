@@ -54,6 +54,7 @@ namespace myLCPTree3
 class LCPrimaryTree3 {
 public:
     bool isSymmetric(myLCPTree3::TreeNode * root);
+    bool check(myLCPTree3::TreeNode *p, myLCPTree3::TreeNode *q);
 };
 
 

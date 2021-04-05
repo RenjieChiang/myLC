@@ -1,8 +1,8 @@
 #include <iostream>
-#include "LCPrimaryTree2.h"
+#include "LCPrimaryTree3.h"
 #include "unistd.h"
 #include <cstdio>
-using namespace myLCPTree2;
+using namespace myLCPTree3;
 
 //ListNode * FrontInsert(int x, ListNode * head )
 //{
@@ -22,7 +22,7 @@ void TreeOut(TreeNode * root)
 
 int main()
 {
-    LCPrimaryTree2 mySolution;
+    LCPrimaryTree3 mySolution;
     TreeNode * root;
     auto myTree = new TreeNode[7] ;
     myTree[0].val = 1;
@@ -31,16 +31,18 @@ int main()
 
     myTree[1].val = 2;
     myTree[2].val = 2;
-    myTree[1].left = &myTree[3];
+//    myTree[1].left = &myTree[3];
     myTree[1].right = &myTree[4];
-    myTree[1].left = &myTree[5];
-    myTree[1].right = &myTree[6]
+//    myTree[2].left = &myTree[5];
+    myTree[2].right = &myTree[6];
 
-    myTree[3].val = 3;
-    myTree[4].val = 4;
+//    myTree[3].val = 3;
+    myTree[4].val = 3;
+//    myTree[5].val = 4;
+    myTree[6].val = 3;
     TreeOut(myTree);
     std::cout << std::endl;
-    std::cout << mySolution.isValidBST(myTree);
+    std::cout << mySolution.isSymmetric(myTree);
     delete [] myTree ;
     return 0;
 }
