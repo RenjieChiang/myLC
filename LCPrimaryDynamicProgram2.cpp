@@ -33,13 +33,11 @@ int LCPrimaryDynamicProgram2::maxProfit(std::vector<int> &prices)
     //超时
 
     //another!
-    int max_index = 0, min_index = 0;
-    for (int i = 1; i < prices.size(); ++i)
+    int min = prices[0], max_profit = 0;
+    for (int price : prices)
     {
-        if (prices[i] > prices[max_index]) max_index = i;
+        max_profit = std::max(max_profit, price - min);
+        min = std::min(min, price);//在第二步更新min，可以保证max计算的时候min都在当下price之前
     }
-    for (int i = 0; i < max_index; ++i)
-    {
-        if (prices[i] < prices[min_index])
-    }
+    return max_profit;
 }
