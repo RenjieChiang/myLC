@@ -1,5 +1,5 @@
 #include <iostream>
-#include "DynamicProgram/LCPrimaryDynamicProgram2.h"
+#include "DesignQuestion/LCPrimaryDQ1.h"
 #include "unistd.h"
 #include <cstdio>
 //using namespace myLCPTree3;
@@ -44,9 +44,16 @@ int main()
 //    std::cout << std::endl;
 //    std::cout << mySolution.isSymmetric(myTree);
 //    delete [] myTree ;
-
-    LCPrimaryDynamicProgram2 mySolution;
-    std::vector<int> nums = {7,1,5,3,6,4};
-    std::cout << mySolution.maxProfit(nums);
+//
+//    LCPrimaryDynamicProgram2 mySolution;
+//    std::vector<int> nums = {7,1,5,3,6,4};
+//    std::cout << mySolution.maxProfit(nums);
+    std::vector<int> num = {1,2,3};
+    LCPrimaryDQ1 mySolution(num);
+    for (auto x : mySolution.reset())
+    std::cout << x << "  ";
+    std::cout << std::endl;
+    for (auto x : mySolution.shuffle())
+        std::cout << x << "  ";
     return 0;
 }
