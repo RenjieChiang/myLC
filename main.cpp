@@ -1,5 +1,5 @@
 #include <iostream>
-#include "LCPrimaryDynamicProgram2.h"
+#include "DynamicProgram/LCPrimaryDynamicProgram2.h"
 #include "unistd.h"
 #include <cstdio>
 //using namespace myLCPTree3;
