@@ -56,4 +56,5 @@ int main()
     for (auto x : mySolution.shuffle())
         std::cout << x << "  ";
     return 0;
+
 }
