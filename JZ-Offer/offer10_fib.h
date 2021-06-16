@@ -7,7 +7,8 @@
 
 
 class offer10_fib {
-
+public:
+    int fib(int n);
 };
 
 
