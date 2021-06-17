@@ -20,7 +20,7 @@ int offer13_movingcount::movingCountCore(int rows, int cols, int i, int j, int k
     int count = 0;
     if (check(rows,cols,i,j,k,visited))
     {
-        visited[i*rows+j] = true;
+        visited[i*cols+j] = true;
         count = 1 + movingCountCore(rows,cols,i-1,j,k,visited)
                     + movingCountCore(rows,cols,i+1,j,k,visited)
                     + movingCountCore(rows,cols,i,j-1,k,visited)
