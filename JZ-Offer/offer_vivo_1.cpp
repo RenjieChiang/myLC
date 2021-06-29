@@ -1,46 +1,21 @@
-#include <iostream>
-#include "Array//LCPMiddleArray1.h"
-#include "unistd.h"
-#include <cstdio>
-//using namespace myLCPTree3;
+//
+// Created by 10372 on 2021/6/17.
+//
 
+#include "offer_vivo_1.h"
 #include "iostream"
 #include "vector"
 using namespace std;
-int main()
+int offer_vivo_1::cargo()
 {
-//    std::vector<int> num= {1,-1,-1,0};
-//    LCPMiddleArray1 solution;
-//    for (auto x_v : solution.threeSum(num))
-//
-//    {
-//        for (auto x : x_v)
-//            std::cout<<x<<" ";
-//        std::cout<< std::endl;
-//    }
-//
-//
-//    return 0;
     vector<int> weight,val;//w-weight v-value
     vector<int> f;
     int V,temp;
     cin >> V;
-    getchar();
-
     while (cin>>temp)
-    {
-        if (temp=='\n')break;
         weight.push_back(temp);
-
-    }
-    getchar();
     while (cin>>temp)
-    {
-        if (temp=='\n')break;
         val.push_back(temp);
-
-    }
-
     if (weight.size() != val.size()) return 0;
     f = vector<int>(V+1,0);
     for (int i = 1; i <= weight.size() ; ++i)
