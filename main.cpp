@@ -6,7 +6,7 @@
 
 #include "iostream"
 #include "vector"
-using namespace std;
+#include "fuckSort/SortTHing.h"
 int main()
 {
 //    std::vector<int> num= {1,-1,-1,0};
@@ -21,36 +21,43 @@ int main()
 //
 //
 //    return 0;
-    vector<int> weight,val;//w-weight v-value
-    vector<int> f;
-    int V,temp;
-    cin >> V;
-    getchar();
+//    vector<int> weight,val;//w-weight v-value
+//    vector<int> f;
+//    int V,temp;
+//    cin >> V;
+//    getchar();
+//
+//    while (cin>>temp)
+//    {
+//        if (temp=='\n')break;
+//        weight.push_back(temp);
+//
+//    }
+//    getchar();
+//    while (cin>>temp)
+//    {
+//        if (temp=='\n')break;
+//        val.push_back(temp);
+//
+//    }
+//
+//    if (weight.size() != val.size()) return 0;
+//    f = vector<int>(V+1,0);
+//    for (int i = 1; i <= weight.size() ; ++i)
+//    {
+//        for (int j = V; j >= weight[i] ; j--)
+//        {
+//            f[j] = max(f[j], f[j - weight[i]] + val[i]);
+//        }
+//    }
+//    int ans = f[V];
+//    cout << ans <<endl;
+//    return 0;
 
-    while (cin>>temp)
-    {
-        if (temp=='\n')break;
-        weight.push_back(temp);
-
-    }
-    getchar();
-    while (cin>>temp)
-    {
-        if (temp=='\n')break;
-        val.push_back(temp);
-
-    }
-
-    if (weight.size() != val.size()) return 0;
-    f = vector<int>(V+1,0);
-    for (int i = 1; i <= weight.size() ; ++i)
-    {
-        for (int j = V; j >= weight[i] ; j--)
-        {
-            f[j] = max(f[j], f[j - weight[i]] + val[i]);
-        }
-    }
-    int ans = f[V];
-    cout << ans <<endl;
+    std::vector<int> test = {46,88,2,46,3,99,5,48,15,6,78,12,45};
+    SortTHing no1;
+    no1.bucketSort(test);
     return 0;
+
+
 }
