@@ -6,7 +6,7 @@
 
 #include "iostream"
 #include "vector"
-#include "fuckSort/SortTHing.h"
+#include "JZ-Offer/offer20_isNumber.h"
 int main()
 {
 //    std::vector<int> num= {1,-1,-1,0};
@@ -54,9 +54,9 @@ int main()
 //    cout << ans <<endl;
 //    return 0;
 
-    std::vector<int> test = {46,88,2,46,3,99,5,48,15,6,78,12,45};
-    SortTHing no1;
-    no1.bucketSort(test);
+    std::string my_s (".");
+    offer20_isNumber myObject;
+    std::cout << myObject.isNumber(my_s);
     return 0;
 
 
