@@ -6,7 +6,7 @@
 
 #include "iostream"
 #include "vector"
-#include "JZ-Offer/offer26_isSubStructure.h"
+#include "JZ-Offer/offer29_spiralOrder.h"
 int main()
 {
 //    std::vector<int> num= {1,-1,-1,0};
@@ -54,13 +54,10 @@ int main()
 //    cout << ans <<endl;
 //    return 0;
 
-    auto head = new TreeNode(1);
-    head->right = new TreeNode(3);
-    head->left = new TreeNode(2);
-    head->left->left = new TreeNode(4);
-    auto B = new TreeNode(3);
-    offer26_isSubStructure mySolution;
-    std::cout << mySolution.isSubStructure(head, B);
+    std::vector<std::vector<int>> dou_vec = {{3},{6},{9}};
+    offer29_spiralOrder sol;
+    for (auto x: sol.spiralOrder(dou_vec))
+        std::cout<< x <<" ";
     return 0;
 
 
