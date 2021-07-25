@@ -13,11 +13,12 @@ ListNode *offer24_reverseList::reverseList(ListNode *head)
     ListNode * now_node = head;
     while (behind->next != nullptr)
     {
+        now_node = behind;
         behind = behind->next;
-        now_node = front->next;
         now_node->next = front;
         front = now_node;
     }
     behind->next = front;
+    head->next = nullptr;
     return behind;
 }
