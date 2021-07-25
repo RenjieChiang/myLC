@@ -6,7 +6,7 @@
 
 #include "iostream"
 #include "vector"
-#include "JZ-Offer/offer20_isNumber.h"
+#include "JZ-Offer/offer26_isSubStructure.h"
 int main()
 {
 //    std::vector<int> num= {1,-1,-1,0};
@@ -54,9 +54,13 @@ int main()
 //    cout << ans <<endl;
 //    return 0;
 
-    std::string my_s (".");
-    offer20_isNumber myObject;
-    std::cout << myObject.isNumber(my_s);
+    auto head = new TreeNode(1);
+    head->right = new TreeNode(3);
+    head->left = new TreeNode(2);
+    head->left->left = new TreeNode(4);
+    auto B = new TreeNode(3);
+    offer26_isSubStructure mySolution;
+    std::cout << mySolution.isSubStructure(head, B);
     return 0;
 
 
