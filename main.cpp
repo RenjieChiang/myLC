@@ -6,7 +6,7 @@
 
 #include "iostream"
 #include "vector"
-#include "JZ-Offer/offer29_spiralOrder.h"
+#include "JZ-Offer/offer31_validStackSequences.h"
 int main()
 {
 //    std::vector<int> num= {1,-1,-1,0};
@@ -54,10 +54,10 @@ int main()
 //    cout << ans <<endl;
 //    return 0;
 
-    std::vector<std::vector<int>> dou_vec = {{3},{6},{9}};
-    offer29_spiralOrder sol;
-    for (auto x: sol.spiralOrder(dou_vec))
-        std::cout<< x <<" ";
+    std::vector<int> push = {1,0};
+    std::vector<int> pop = {1,0};
+    offer31_validStackSequences sol;
+    std::cout << sol.validStackSequences(push, pop);
     return 0;
 
 
